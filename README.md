@@ -1,4 +1,4 @@
-# GoT - Sergio Mata
+# GoT classes - Sergio Mata
 
 Tendrás que crear en JS una estructura de clases que refleje el siguiente modelo de datos:
 
