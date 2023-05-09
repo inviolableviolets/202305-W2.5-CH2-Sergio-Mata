@@ -25,4 +25,18 @@ describe("Given a Fighter class", () => {
       );
     });
   });
+  describe("When we call the method die()", () => {
+    test("Then it should return 'dead'", () => {
+      const newObject = new Fighter();
+
+      expect(newObject.die()).toBe("dead");
+    });
+  });
+  describe("When we call the method talk()", () => {
+    test("Then it should return 'dead'", () => {
+      const newObject = new Fighter();
+
+      expect(newObject.talk()).toBe("Primero pego y luego pregunto");
+    });
+  });
 });

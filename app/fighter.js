@@ -2,10 +2,8 @@
 import { Character } from "./character.js";
 
 export class Fighter extends Character {
-  yearsOfReign;
-
-  constructor(name, houseName, age, status, weapon, skill) {
-    super(name, houseName, age, status);
+  constructor(name, houseName, age, weapon, skill) {
+    super(name, houseName, age);
     this.weapon = weapon;
     this.skill = skill;
     this.speech = "Primero pego y luego pregunto";
