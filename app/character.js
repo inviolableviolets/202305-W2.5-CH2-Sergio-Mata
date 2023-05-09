@@ -17,4 +17,6 @@ export class Character {
     this.status = "dead";
     return this.status;
   }
+
+  talk() {}
 }
