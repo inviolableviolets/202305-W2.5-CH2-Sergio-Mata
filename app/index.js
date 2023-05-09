@@ -12,6 +12,11 @@ const character5 = new King("Jeoffrey", "Baratheon", 16, "sword", 9);
 character1.die();
 character3.die();
 
-console.log(character1.talk());
+const characters = [character1, character2, character3, character4, character5];
 
-// Console.log(character1, character2, character3, character4, character5);
+const printCharactersSpeech = (charactersList) => [
+  character1.talk(),
+  character2.talk(),
+];
+
+console.log(printCharactersSpeech(characters));
