@@ -9,7 +9,7 @@ describe("Given a Character class", () => {
       expect(newObject).toHaveProperty("houseName", "Lannister");
       expect(newObject).toHaveProperty("age", 34);
       expect(newObject).toHaveProperty("series", "Game of Thrones");
-      expect(newObject).toHaveProperty("status", "vivo");
+      expect(newObject).toHaveProperty("status", "alive");
     });
   });
 });

@@ -2,15 +2,14 @@ export class Character {
   name;
   houseName;
   age;
-  status;
   series;
 
-  constructor(name, houseName, age, status = "alive") {
+  constructor(name, houseName, age) {
     this.name = name;
     this.houseName = houseName;
     this.age = age;
     this.series = "Game of Thrones";
-    this.status = status;
+    this.status = "alive";
   }
 
   die() {
@@ -18,5 +17,7 @@ export class Character {
     return this.status;
   }
 
-  talk() {}
+  talk() {
+    return `${this.speech}`;
+  }
 }
