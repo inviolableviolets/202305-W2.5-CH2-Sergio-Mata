@@ -1,8 +1,34 @@
-# Factura:
+# GoT classes - Sergio Mata
 
-Usando OOP, definir un objeto que almacena una factura. Todas las propiedades se definen como privadas.
+Tendrás que crear en JS una estructura de clases que refleje el siguiente modelo de datos:
 
-Las facturas están formadas por la información de la propia empresa (nombre de la empresa, dirección, teléfono, NIF), la información del cliente (similar a la de la empresa), una lista de elementos (cada uno de los cuales dispone de descripción, precio, cantidad) y otra información básica de la factura (importe total, tipo de IVA, forma de pago).
+En Juego de Tronos existen personajes. Todos esos personajes tienen la siguiente información: · Nombre · Familia a la que pertenece · Edad · Estado (vivo o muerto, aunque inicialmente todos están vivos)
 
-Se incluyen 2 métodos públicos 1) calcula el importe total de la factura y actualice el valor de la propiedad correspondiente. 2) muestre por pantalla el importe total de la factura.
-Opción: el primero de los métodos puede redefinirse como privado.
+Todos los personajes pueden realizar la acción de comunicar, pero cada tipo de personaje (no cada personaje) se comunica de un modo distinto. Nota: este método devuelve el string con la frase, no imprime por consola.
+
+Todos los personajes pueden realizar la acción de morir, cambiándose su estado a muerto.
+
+Todos los personajes pertenecen a la misma serie, "Juego de Tronos".
+
+Cada uno de esos personajes puede ser un rey, un luchador, un asesor, o un escudero.
+
+Un rey, además de la información que tiene por ser personaje, tiene la siguiente información: · Años de reinado · Cuando se comunica dice: "Vais a morir todos"
+
+Un luchador, además de la información que tiene por ser personaje, tiene la siguiente información: · Arma que usa · Destreza (un valor entre 0 y 10) · Cuando se comunica dice: "Primero pego y luego pregunto"
+
+Un asesor, además de la información que tiene por ser personaje, tiene la siguiente información: · Personaje al que asesora (que puede ser rey, luchador, asesor o escudero) · Cuando se comunica dice: "No sé por qué, pero creo que voy a morir pronto"
+
+Un escudero, además de la información que tiene por ser personaje, tiene la siguiente información: · Personaje al que sirve (que sólo puede ser luchador) · Grado de pelotismo (un valor entre 0 y 10) · Cuando se comunica dice: "Soy un loser"
+
+Testea todo.
+
+Una vez hecha toda la estructura, crea a Joffrey Baratheon (rey), Jaime Lannister (luchador), a Daenerys Targaryen (luchadora), a Tyrion Lannister (asesor de Daenerys) y a Bronn (escudero de Jaime).
+
+Crea un array con todos los personajes.
+Haz una función que tenga como entrada dicho array y devuelva un array con los mensajes que comunican los luchadores.
+
+Imprime por consola el nombre de la serie a la que pertenecen los personajes.
+
+Recorre el array de mensajes e imprímelos por consola.
+
+Mata a Jaime y a Tyrion.
